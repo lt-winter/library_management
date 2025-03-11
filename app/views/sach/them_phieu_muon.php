@@ -19,10 +19,10 @@
         <label for="ma_doc_gia" class="form-label">Độc giả</label>
         <select class="form-control" id="ma_doc_gia" name="ma_doc_gia" required>
             <?php
-            $stmt = $conn->query("SELECT * FROM DocGia");
-            while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
-                echo "<option value='{$row['MaDocGia']}'>{$row['TenDocGia']}</option>";
-            }
+                $stmt = $conn->query("SELECT * FROM DocGia");
+                while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+                    echo "<option value='{$row['MaDocGia']}'>{$row['TenDocGia']}</option>";
+                }
             ?>
         </select>
     </div>
